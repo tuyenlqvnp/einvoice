@@ -17,8 +17,8 @@ namespace TestLib
             SHA1CryptoServiceProvider sha1 = new SHA1CryptoServiceProvider();
 
             //string serial = "008640bbd93a1deb45";//cert old
-            string serial = "00fb7832a04d3eb69f";//cert new
-            //string serial = "54018ef116dc26d07254d81de2fb6de6";
+            //string serial = "00fb7832a04d3eb69f";//cert new
+            string serial = "54018ef116dc26d07254d81de2fb6de6";
             X509Certificate2 certificate = EInvoiceLib.X509Fn.GetCertificateBySerial(serial);
             string my_cert_pem = "MIICxzCCAjCgAwIBAgIJAPt4MqBNPrafMA0GCSqGSIb3DQEBCwUAMHsxCzAJBgNVBAYTAnZuMQswCQYDVQQIDAJidDEMMAoGA1UEBwwDaGNtMQ0wCwYDVQQKDAR2ZHNnMQ0wCwYDVQQLDARob21lMQ4wDAYDVQQDDAV0dXllbjEjMCEGCSqGSIb3DQEJARYUdHV5ZW5scXZucEBnbWFpbC5jb20wHhcNMTgwOTEyMDUxOTUwWhcNMTkwOTEyMDUxOTUwWjB7MQswCQYDVQQGEwJ2bjELMAkGA1UECAwCYnQxDDAKBgNVBAcMA2hjbTENMAsGA1UECgwEdmRzZzENMAsGA1UECwwEaG9tZTEOMAwGA1UEAwwFdHV5ZW4xIzAhBgkqhkiG9w0BCQEWFHR1eWVubHF2bnBAZ21haWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqzX3SRXuc5b/JN7ynXXcDEKGkPz5t+WQYK4ui1286Ovh/q3HHeRZ87rIZohwL6l299Hpl2OROwGxm21+V9jPBcqwzoVyM7SapU9taUinPcaOw2LrbukbvwXgjsz0p2x69wvFF4QuYyZnTKhcqZM1RnyeG+8cfyq9A3STcjuPagQIDAQABo1MwUTAdBgNVHQ4EFgQUq2wgrX5HJMNcBey9jYIT3SnLKmMwHwYDVR0jBBgwFoAUq2wgrX5HJMNcBey9jYIT3SnLKmMwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOBgQAl/cPcsIWhV9RvwLlY68tw99O+/yX8UZBXI8DWQZcecHU1xkrsdHCFxv7qN1gejqJhF67weaIcwzCxV6/RlX5VaOkNmuxyDwWxUsOpzoMMRhwXXjlvkWhWO6FwePtExQjFL/or7aqQ26bjbnaQgOhZzqZrqoC7tPcC7xjKT0iBlA==";
             byte[] my_cert_pem_byte = Encoding.UTF8.GetBytes(my_cert_pem);
