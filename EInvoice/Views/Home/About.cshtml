@@ -4,4 +4,18 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
+<input type="button" value="click" onclick="fun1()" />
+<script>
+
+
+
+    function fun1()
+    {
+        console.log("abc");
+        $.post("http://localhost:8189", function (data) {
+            console.log(data);
+        });
+    }
+</script>
+
 <p>Use this area to provide additional information.</p>

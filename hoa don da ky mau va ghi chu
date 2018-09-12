@@ -1,0 +1,135 @@
+<?xml-stylesheet type='text/xsl' href='https://panalpinahnadmindemo.vnpt-invoice.com.vn/InvoiceTemplate/GetXSLTbyTempName/PANALPINAHN' ?>
+    <Invoice>
+        <Content Id="SigningData">
+            <InvoiceName>Hóa đơn giá trị gia tăng</InvoiceName>
+            <InvoicePattern>01GTKT0/001</InvoicePattern>
+            <SerialNo>PA/18E</SerialNo>
+            <InvoiceNo>5</InvoiceNo>
+            <ArisingDate>11/09/2018</ArisingDate>
+            <Kind_of_Payment></Kind_of_Payment>
+            <ComName>CHI NHÁNH - CÔNG TY TNHH PANALPINA WORLD TRANSPORT VIỆT NAM</ComName>
+            <ComTaxCode>0306033041-001</ComTaxCode>
+            <ComAddress>229 Tây Sơn, Phường Ngã Tư Sở, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</ComAddress>
+            <ComPhone>0908038496</ComPhone>
+            <ComBankNo></ComBankNo>
+            <ComBankName></ComBankName>
+            <CusCode>605049</CusCode>
+            <CusName>CÔNG TY TNHH XUẤT NHẬP KHẨU SUNG IL VINA</CusName>
+            <Buyer>CÔNG TY TNHH XUẤT NHẬP KHẨU SUNG IL VINA</Buyer>
+            <CusTaxCode>5400477131</CusTaxCode>
+            <CusPhone></CusPhone>
+            <CusAddress>Xóm BãiTrang1,CụmCNkhuvực ĐôngLai-ThanhHối,Xã ĐôngLai,HuyệnTânLạc,Tỉnh HòaBình,ViệtNam</CusAddress>
+            <CusBankName></CusBankName>
+            <CusBankNo></CusBankNo>
+            <Total>424400</Total>
+            <Amount>466840</Amount>
+            <AmountInWords>Bốn trăm sáu mươi sáu nghìn tám trăm bốn mươi chẵn</AmountInWords>
+            <ComFax></ComFax>
+            <KindOfService>Air/781336</KindOfService>
+            <VAT_Amount>42440</VAT_Amount>
+            <VAT_Rate>10</VAT_Rate>
+            <GrossValue>0</GrossValue>
+            <Extra></Extra>
+            <GrossValue0>0</GrossValue0>
+            <GrossValue5>0</GrossValue5>
+            <GrossValue10>0</GrossValue10>
+            <VatAmount0>0</VatAmount0>
+            <VatAmount5>0</VatAmount5>
+            <VatAmount10>424400</VatAmount10>
+            <DiscountAmount>0</DiscountAmount>
+            <DiscountRate>0</DiscountRate>
+            <ContractNumber></ContractNumber>
+            <ContractDate></ContractDate>
+            <ShippingDate></ShippingDate>
+            <ShippingNo></ShippingNo>
+            <ShippingAddress></ShippingAddress>
+            <Warehouse></Warehouse>
+            <ReferenceNo></ReferenceNo>
+            <GrossValueNoTax>0</GrossValueNoTax>
+            <TyGia></TyGia>
+            <SoVT></SoVT>
+            <DonDatHangSo>HAN369400</DonDatHangSo>
+            <SoXe></SoXe>
+            <KyHan></KyHan>
+            <NgayDaoHan></NgayDaoHan>
+            <Extra1>VND</Extra1>
+            <Extra2></Extra2>
+            <Extra3></Extra3>
+            <MaThanhToan></MaThanhToan>
+            <qrCodeData></qrCodeData>
+            <Products>
+                <Product>
+                    <Code></Code>
+                    <Remark>1</Remark>
+                    <ProdName>Phí soi an ninh ( X-ray fee) (Security Handling at Origin) - HAN369400</ProdName>
+                    <ProdUnit>Lần</ProdUnit>
+                    <ProdQuantity>1</ProdQuantity>
+                    <ProdPrice>139400</ProdPrice>
+                    <Total>0</Total>
+                    <Discount>0</Discount>
+                    <DiscountAmount>0</DiscountAmount>
+                    <VATRate>10</VATRate>
+                    <VATAmount>0</VATAmount>
+                    <Amount>139400</Amount>
+                    <Extra1></Extra1>
+                    <Extra2></Extra2>
+                </Product>
+                <Product>
+                    <Code></Code>
+                    <Remark>2</Remark>
+                    <ProdName>Phí khai hải quan điện tử (Advanced Security Filing Fee) - HAN369400</ProdName>
+                    <ProdUnit>Lần</ProdUnit>
+                    <ProdQuantity>1</ProdQuantity>
+                    <ProdPrice>160000</ProdPrice>
+                    <Total>0</Total>
+                    <Discount>0</Discount>
+                    <DiscountAmount>0</DiscountAmount>
+                    <VATRate>10</VATRate>
+                    <VATAmount>0</VATAmount>
+                    <Amount>160000</Amount>
+                    <Extra1></Extra1>
+                    <Extra2></Extra2>
+                </Product>
+                <Product>
+                    <Code></Code>
+                    <Remark>3</Remark>
+                    <ProdName>Phí vận đơn (Air Waybill Fee) - HAN369400</ProdName>
+                    <ProdUnit>Lần</ProdUnit>
+                    <ProdQuantity>1</ProdQuantity>
+                    <ProdPrice>125000</ProdPrice>
+                    <Total>0</Total>
+                    <Discount>0</Discount>
+                    <DiscountAmount>0</DiscountAmount>
+                    <VATRate>10</VATRate>
+                    <VATAmount>0</VATAmount>
+                    <Amount>125000</Amount>
+                    <Extra1></Extra1>
+                    <Extra2></Extra2>
+                </Product>
+            </Products>
+            <SignDate>11/09/2018</SignDate>
+        </Content>
+        <Signature Id="serSig" xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <SignedInfo>
+                <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+                <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+                <Reference URI="#SigningData">
+                    <Transforms>
+                        <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                    </Transforms>
+                    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+                    <DigestValue>AEJHmJ2T8c3bMH2pNnljjGHFe4I=</DigestValue><!--sha1.computehash(noi dung hoa don) covert to base64-->
+                </Reference>
+            </SignedInfo>
+            <SignatureValue>V7drPFh6X8qmVsYiOdC3ijGuxe9MRS1U8LtLZWOVj8AbxxCD53VsbW7abzjD5Nfg40/ym4IWli3KouJA+tQFA7K1sn1v/d67Nn1kyVy1/T5iCMNu+IBgIVvbE5+FnEdc38H2zGw2tTu1TyYoiefuqUu/UtsArtT6jre9450214c=</SignatureValue>
+
+            <SignatureValue>b8bLCFTig7DgGRbdyy0K/FmOMIDqxO95+l0n9om0wHZ0pbhDh/kP0KAht0xodJSzgV9J+ROnX+UcQNkXLhvJiF7cOKJDO58wSasjZpqbFetxRC/Xm8WD0yZb6abh33qTogyDdoNxJqqSOT55LImR0czpeB4fBI+exbQqbzILD4E=</SignatureValue>
+            <KeyInfo>
+                <X509Data>
+                    <X509Certificate>MIIF0TCCA7mgAwIBAgIQVAFABg2uTT5Gj+kzVd+d7TANBgkqhkiG9w0BAQUFADBpMQswCQYDVQQGEwJWTjETMBEGA1UEChMKVk5QVCBHcm91cDEeMBwGA1UECxMVVk5QVC1DQSBUcnVzdCBOZXR3b3JrMSUwIwYDVQQDExxWTlBUIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTE3MDUxNzAyMjAwMFoXDTE5MDUxNzE0MjAwMFowgZUxCzAJBgNVBAYTAlZOMRIwEAYDVQQIDAlIw4AgTuG7mEkxFTATBgNVBAcMDEPhuqd1IEdp4bqleTENMAsGA1UECwwEVk5QVDEUMBIGA1UEDAwLTmjDom4gdmnDqm4xEjAQBgNVBAMMCVZOUFRfVEVTVDEiMCAGCgmSJomT8ixkAQEMEk1TVDowMTA2ODY5NzM4LTAxMjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAijq93/KYHROYmPSoMQPe92tWmSNYE9oG+/OIhqJHA7qpfJUEfEiVjLmkkNcdSdfFdfW3S/wR9jZeftetH/gGYoBcLKy9XF64oiItQPfgW0f1rNLCDj1xrLwe4hzx1I8k2fD8OHhS87ypqGupO/JBnH/qgt/jOemwH8mbRjPmOscCAwEAAaOCAcowggHGMHAGCCsGAQUFBwEBBGQwYjAyBggrBgEFBQcwAoYmaHR0cDovL3B1Yi52bnB0LWNhLnZuL2NlcnRzL3ZucHRjYS5jZXIwLAYIKwYBBQUHMAGGIGh0dHA6Ly9vY3NwLnZucHQtY2Eudm4vcmVzcG9uZGVyMB0GA1UdDgQWBBRDoSi7tTMsOg566sDXf40307aznTAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFAZpwNXVAooVjUZ96XziaApVrGqvMGgGA1UdIARhMF8wXQYOKwYBBAGB7QMBAQMBAwIwSzAiBggrBgEFBQcCAjAWHhQAUwBJAEQALQBQAFIALQAxAC4AMDAlBggrBgEFBQcCARYZaHR0cDovL3B1Yi52bnB0LWNhLnZuL3JwYTAxBgNVHR8EKjAoMCagJKAihiBodHRwOi8vY3JsLnZucHQtY2Eudm4vdm5wdGNhLmNybDAOBgNVHQ8BAf8EBAMCBPAwNAYDVR0lBC0wKwYIKwYBBQUHAwIGCCsGAQUFBwMEBgorBgEEAYI3CgMMBgkqhkiG9y8BAQUwIQYDVR0RBBowGIEWdHJhbnRoaXRodWhpZW5Adm5wdC52bjANBgkqhkiG9w0BAQUFAAOCAgEAOg7rhjX42AKaF8N4oltAL180oBAaabgTg3BHNo3dms0TH0OPTqWkPrcnmNnq9toHTDCAsdc06+powi7PcuTfB8IMUWzNj+TDPKXjmGy2zIVBblL7KQZ02bXgfI+f8YX71McMs6S8R6o19Ks2U1JuV4jnLUQXUuomXtl99tCxKLBYJdVoMW7lhBl9whGIdE31TDWiGYDEaUw3tOSm6yHF7p2dD8qOCURN02lPAgc2Id2QngjG04mjO/MDX3969yMQE5tljNBdOUGQiQl8UVfc7fn2uYViAo3F86eK8ifE3V5O2ZcJPt0ctVuQDFJ0FrOXwhCW6nHWz4XEwNxGvQ7+tCy/jMwX2BecIJw7clabyMA90UhWtJe4X3CwV6dhAcYPkjGnKjb5TerYwxccKxNQ9G+WwaF++sooRAKOjPKXOV5FvyKZrZrNWs3g9RN3SNEYCIKqTdtGc/lbZQLZ8SWLmHgTm0cMN+PRzuHtyfKvV3VN/J5Faqf8UkQ7VfCy1bu2aLpVHUoCSE89li0169KHjV5/UC/sgDI/HVHxFKOa/vSAFFPJF6f0NsEGSrRwX/N+C3QibVK4r0A0v3UzSwoxdhab+vO7Z+ro9h00V345abgKVq3vzwY9+cyWdiFYIRy6OyBx/aXNPBRWbDWCtj0IamimiCvfEv039XNTS+oEPjk=</X509Certificate>
+
+                    <X509Certificate>MIICxzCCAjCgAwIBAgIJAPt4MqBNPrafMA0GCSqGSIb3DQEBCwUAMHsxCzAJBgNVBAYTAnZuMQswCQYDVQQIDAJidDEMMAoGA1UEBwwDaGNtMQ0wCwYDVQQKDAR2ZHNnMQ0wCwYDVQQLDARob21lMQ4wDAYDVQQDDAV0dXllbjEjMCEGCSqGSIb3DQEJARYUdHV5ZW5scXZucEBnbWFpbC5jb20wHhcNMTgwOTEyMDUxOTUwWhcNMTkwOTEyMDUxOTUwWjB7MQswCQYDVQQGEwJ2bjELMAkGA1UECAwCYnQxDDAKBgNVBAcMA2hjbTENMAsGA1UECgwEdmRzZzENMAsGA1UECwwEaG9tZTEOMAwGA1UEAwwFdHV5ZW4xIzAhBgkqhkiG9w0BCQEWFHR1eWVubHF2bnBAZ21haWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqzX3SRXuc5b/JN7ynXXcDEKGkPz5t+WQYK4ui1286Ovh/q3HHeRZ87rIZohwL6l299Hpl2OROwGxm21+V9jPBcqwzoVyM7SapU9taUinPcaOw2LrbukbvwXgjsz0p2x69wvFF4QuYyZnTKhcqZM1RnyeG+8cfyq9A3STcjuPagQIDAQABo1MwUTAdBgNVHQ4EFgQUq2wgrX5HJMNcBey9jYIT3SnLKmMwHwYDVR0jBBgwFoAUq2wgrX5HJMNcBey9jYIT3SnLKmMwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOBgQAl/cPcsIWhV9RvwLlY68tw99O+/yX8UZBXI8DWQZcecHU1xkrsdHCFxv7qN1gejqJhF67weaIcwzCxV6/RlX5VaOkNmuxyDwWxUsOpzoMMRhwXXjlvkWhWO6FwePtExQjFL/or7aqQ26bjbnaQgOhZzqZrqoC7tPcC7xjKT0iBlA==</X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </Signature>
+    </Invoice>

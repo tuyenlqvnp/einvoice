@@ -62,6 +62,40 @@ namespace EInvoiceLib
                 return "ERR:-3 " + (object)ex;
             }
         }
+
+        //tuyen viet
+        public static string signHashCert(byte[] data, string serial)
+        {
+            try
+            {
+                RSACryptoServiceProvider cryptoServiceProvider = (RSACryptoServiceProvider)null;
+                X509Store x509Store = new X509Store(StoreName.My, StoreLocation.CurrentUser);
+                x509Store.Open(OpenFlags.ReadOnly);
+                foreach (X509Certificate2 certificate in x509Store.Certificates)
+                {
+                    if (certificate.GetSerialNumberString().ToUpper() == serial.ToUpper())
+                    {
+                        cryptoServiceProvider = (RSACryptoServiceProvider)certificate.PrivateKey;
+                        // cryptoServiceProvider = (RSACryptoServiceProvider)certificate.PublicKey.Key;//tuyen edit
+                        if (cryptoServiceProvider == null)
+                            return "ERR:-2";
+                        break;
+                    }
+                }
+                //string base64String = Convert.ToBase64String(cryptoServiceProvider.SignHash(Convert.FromBase64String(hashValue), CryptoConfig.MapNameToOID("SHA1")));
+                //string base64String = Convert.ToBase64String(cryptoServiceProvider.SignHash(data, CryptoConfig.MapNameToOID("SHA1")));
+                byte[] signature = cryptoServiceProvider.SignData(data, "SHA1");
+                x509Store.Close();
+                string base64String = Convert.ToBase64String(signature);
+                return base64String;
+            }
+            catch (Exception ex)
+            {
+                if (ex.Message.Contains("cancelled by the user"))
+                    return "ERR:-1";
+                return "ERR:-3 " + (object)ex;
+            }
+        }
         public static string CreateMD5(string input)
         {
             // Use input string to calculate MD5 hash

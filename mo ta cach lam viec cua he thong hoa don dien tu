@@ -1,0 +1,37 @@
+
+tren server co luu tru public key
+tren server co luu tru cert trong he thong certmng
+ung voi moi web cua khach hang co 1 serial cua token
+khi thao tac ky tren 1 hoa don: 
+	client gui thong tin serial len server
+	noi dung cua hoa don do dang xml
+	tren server se check xem dung serial do dung hay khong moi cho ban ky tren to hoa don do duoi client (phong truong hop ban vao 1 trang web cua 1 khach hang khac ban thao tac ky)
+	client sau khi ky len 1 to hoa don se gui thong tin len server
+		client gui xml len va bang tom luoc noi dung (digest value) va noi dung hoa don (xml invoice) len server
+		clien dung private key ky len bang tom luoc roi gui len server voi noi dung (signaturevalue)
+		client gui cert serial len server
+
+khach hang co the su dung token cua viettel de ky
+khach hang cung gui thong tin cer len de server vnpt luu tru
+tren server cua vnpt luu tru public key cua viettel luon
+
+cach server verify:
+	1 khach hang khi vao web portal cua vnpt de xem to hoa don do co phai do ben A ky khong
+		server vnpt se dung pubkey luu tru tren server
+		dung pubkey de ma hoa lai digest value
+		neu digest value ma pubkey ma hoa = digest value cua prikey ma hoa (trong to hoa don do - dieu nay giong nhu viec ben A dong 1 con dau do tren to hoa don - nhiem vu vnpt la bao cho khach hang biet la to hoa don do dung la do ben cong ty A dong chu khong phai do cong ty nao do dong dau )
+		thi server vnpt se noi rang to hoa don do dung la do ben A ky
+		sau do server vnpt se dong 1 dau xac thuc tren to hoa don do ( dau check V )
+		khach hang se vao lay to hoa don do va thay vnpt da noi rang hoa don do dung la do ben A ky roi khong sai duoc
+	khach hang yen tam lay to hoa don do 
+
+neu vnpt gen token cho khach hang nghia la vnpt co file key va file pem
+
+--------------------------------------------------------------CACH LAM------------------------------------------------------------
+khi bat dau build 1 he thong cua khach hang
+minh yeu cau khach hang gui cho minh 1 serial number
+tren server minh se luu serial number do, tuong ung voi ten cong ty, dia chi
+
+
+
+
