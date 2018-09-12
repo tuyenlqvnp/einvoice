@@ -1,4 +1,4 @@
-
+-------------------------------------------------------GIAI PHAP TOKEN-------------------------------------------------------
 tren server co luu tru public key
 tren server co luu tru cert trong he thong certmng
 ung voi moi web cua khach hang co 1 serial cua token
@@ -9,7 +9,8 @@ khi thao tac ky tren 1 hoa don:
 	client sau khi ky len 1 to hoa don se gui thong tin len server
 		client gui xml len va bang tom luoc noi dung (digest value) va noi dung hoa don (xml invoice) len server
 		clien dung private key ky len bang tom luoc roi gui len server voi noi dung (signaturevalue)
-		client gui cert serial len server
+		client gui cert serial len server (x509certificate)
+		server se su dung x509certificate + pass se build ra x509certificate mang pubkey ben trong
 
 khach hang co the su dung token cua viettel de ky
 khach hang cung gui thong tin cer len de server vnpt luu tru
@@ -24,8 +25,16 @@ cach server verify:
 		sau do server vnpt se dong 1 dau xac thuc tren to hoa don do ( dau check V )
 		khach hang se vao lay to hoa don do va thay vnpt da noi rang hoa don do dung la do ben A ky roi khong sai duoc
 	khach hang yen tam lay to hoa don do 
+--------------------------------------------------------------GIAI PHAP HSM------------------------------------------------------
+tren server luu tru san certificate trong he thong certmng bao gom luon private key lan public key
+khi nguoi dung thao tac ky len 1 hoa don nao do
+he thong load serial number cua trang web do chuyen doi thanh x509certificate
+su dung private key co san trong he thong ky len hoa don do
+luu vao xml hoa don bang (digest value)
+luu vao xml hoa don signaturevalue
+luu vao xml x509 certificate ( mang thong tin cua cong ty do) + password se lay len duoc x509 certificate chua pubkey trong do
+server verify hoa don bang cach su dung public key luu tren server de verify theo thuan toan sha1
 
-neu vnpt gen token cho khach hang nghia la vnpt co file key va file pem
 
 --------------------------------------------------------------CACH LAM------------------------------------------------------------
 khi bat dau build 1 he thong cua khach hang
